@@ -7,6 +7,34 @@ The attributes should be private, and public methods should be provided to depos
 **Authorship Exercise**
 Create Author and Book classes with properties, extend them, link them via an Authorship class, and implement methods in Authorship to display details and add contribution information.
 
+**Movie Collection API**
+Develop a RESTful API to manage a collection of movies using C#, ASP.NET Core,
+MongoDB, and Postman for endpoint testing. The API should support basic CRUD
+operations (Create, Read, Update, Delete) on the movies collection.
+Database Structure
+You will use MongoDB to store the movies. The movies collection should include
+documents with the following structure:
+```
+{
+"_id": { "$oid": "60c72b2f4f1a4e3d4c8f1e7a" },
+"title": "Inception",
+"director": "Christopher Nolan",
+"releaseYear": 2010,
+"genres": ["Sci-Fi", "Action"],
+"ratings": [
+{ "source": "IMDb", "value": 8.8 },
+{ "source": "Rotten Tomatoes", "value": 87 }
+]
+}
+```
+*Create a new ASP.NET Core Web API project.*
+```dotnet new webapi -n MovieCollectionAPI```
+*Install necessary NuGet packages, including MongoDB.Driver .*
+```dotnet add package MongoDB.Driver```
+*Run project*
+```dotnet run```
+
+
 **HealthClinic Medical Information System**
 
 *Description:*
